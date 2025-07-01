@@ -32,14 +32,14 @@ Nordlys can also render an icon that matches the code-language in the header. Wh
 
 ````md pages/example.md
 ```javascript
-const sortedArray = [3, 1, 2].toSorted()
+const sortedArray = [3, 1, 2].toSorted();
 ```
 ````
 
 The code above renders to:
 
 ```javascript
-const sortedArray = [3, 1, 2].toSorted()
+const sortedArray = [3, 1, 2].toSorted();
 ```
 
 If the code language is not specified or if a language that is not yet supported is used, the <span class="iconify text-4xl tabler--dots"></span> icon will be displayed, as seen in the [basic example](#basic-example).
@@ -67,9 +67,9 @@ It is also possible to change the colors of the code blocks, by changing the `sh
 ```typescript theme.config.ts
 export default defineThemeConfig({
   shikiThemes: {
-    light: 'vitesse-light',
-    dark: 'vitesse-black'
-  }
+    light: "vitesse-light",
+    dark: "vitesse-black",
+  },
   // ... other settings
-})
+});
 ```

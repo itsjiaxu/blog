@@ -24,3 +24,4 @@ This project is based on the original template but includes the following modifi
 
 ```bash
 npm install
+```

@@ -1,6 +1,6 @@
 ---
-layout: '@/layouts/LandingLayout.astro'
-title: Joshua’s Space 
+layout: "@/layouts/LandingLayout.astro"
+title: Joshua’s Space
 background: true
 logo: false
 ---

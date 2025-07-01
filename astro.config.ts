@@ -1,11 +1,11 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from "astro/config";
 
-import mdx from '@astrojs/mdx'
-import sitemap from '@astrojs/sitemap'
-import tailwindcss from '@tailwindcss/vite'
-import codeHeadersPlugin from './src/plugins/codeHeadersPlugin'
-import readingTimePlugin from './src/plugins/readingTimePlugin'
-import config from './src/theme.config'
+import mdx from "@astrojs/mdx";
+import sitemap from "@astrojs/sitemap";
+import tailwindcss from "@tailwindcss/vite";
+import codeHeadersPlugin from "./src/plugins/codeHeadersPlugin";
+import readingTimePlugin from "./src/plugins/readingTimePlugin";
+import config from "./src/theme.config";
 
 export default defineConfig({
   site: config.site,
@@ -15,12 +15,12 @@ export default defineConfig({
     shikiConfig: {
       themes: config.shikiThemes,
       wrap: true,
-      transformers: [codeHeadersPlugin]
+      transformers: [codeHeadersPlugin],
     },
-    remarkPlugins: [readingTimePlugin]
+    remarkPlugins: [readingTimePlugin],
   },
 
   vite: {
-    plugins: [tailwindcss()]
-  }
-})
+    plugins: [tailwindcss()],
+  },
+});

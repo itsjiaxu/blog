@@ -9,7 +9,7 @@
     font-size: var(--text-sm);
     color: var(--code-header-color);
 
-    html[data-mode='dark'] & {
+    html[data-mode="dark"] & {
       color: var(--code-header-color-dark);
     }
   }
@@ -32,7 +32,7 @@
   border-top-width: 0;
 }
 
-html[data-mode='dark'] {
+html[data-mode="dark"] {
   .astro-code,
   .astro-code span {
     color: var(--shiki-dark) !important;

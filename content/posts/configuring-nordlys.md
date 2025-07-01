@@ -16,35 +16,35 @@ The following options must always be set:
 
 ```ts src/theme.config.ts
 export default defineThemeConfig({
-  site: 'https://my-awesome-site.com',
-  title: 'My awesome site',
-  description: 'My awesome site is a blog about awesome things',
-  author: 'John Doe',
+  site: "https://my-awesome-site.com",
+  title: "My awesome site",
+  description: "My awesome site is a blog about awesome things",
+  author: "John Doe",
   navbarItems: [
-    { label: 'Blog', href: '/posts' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Tags', href: '/tags' },
-    { label: 'About', href: '/about' },
+    { label: "Blog", href: "/posts" },
+    { label: "Projects", href: "/projects" },
+    { label: "Tags", href: "/tags" },
+    { label: "About", href: "/about" },
     {
-      label: 'Other pages',
+      label: "Other pages",
       children: [
-        { label: 'Landing page', href: '/' },
-        { label: '404 page', href: '/404' },
-        { label: 'Author: joshua', href: '/authors/joshua' },
-        { label: 'Tag: documentation', href: '/tags/documentation' }
-      ]
-    }
+        { label: "Landing page", href: "/" },
+        { label: "404 page", href: "/404" },
+        { label: "Author: joshua", href: "/authors/joshua" },
+        { label: "Tag: documentation", href: "/tags/documentation" },
+      ],
+    },
   ],
   footerItems: [
     {
-      icon: 'tabler--rss',
-      href: '/feed.xml',
-      label: 'RSS feed'
-    }
-  ]
+      icon: "tabler--rss",
+      href: "/feed.xml",
+      label: "RSS feed",
+    },
+  ],
 
   //... others are optional
-})
+});
 ```
 
 ### Site
@@ -73,27 +73,27 @@ The following settings are optional and will default to preset values (as shown 
 
 ```ts src/theme.config.ts
 export default defineThemeConfig({
-  locale: 'en',
-  mode: 'dark',
+  locale: "en",
+  mode: "dark",
   modeToggle: true,
-  colorScheme: 'scheme-mono',
+  colorScheme: "scheme-mono",
   openGraphImage: undefined,
   postsPerPage: 4,
   projectsPerPage: 3,
   scrollProgress: false,
   scrollToTop: true,
   tagIcons: {
-    tailwindcss: 'tabler--brand-tailwind',
-    astro: 'tabler--brand-astro',
-    documentation: 'tabler--book'
+    tailwindcss: "tabler--brand-tailwind",
+    astro: "tabler--brand-astro",
+    documentation: "tabler--book",
   }, // default is {}
   shikiThemes: {
-    light: 'vitesse-light',
-    dark: 'vitesse-black'
-  }
+    light: "vitesse-light",
+    dark: "vitesse-black",
+  },
 
   // ... others are mandatory
-})
+});
 ```
 
 ### Locale

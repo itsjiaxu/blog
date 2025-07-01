@@ -14,7 +14,7 @@ To add a new page to Nordlys, navigate to the `src/pages` and create a new Markd
 
 ```markdown src/pages/faq.md
 ---
-layout: '@/layouts/PageLayout.astro'
+layout: "@/layouts/PageLayout.astro"
 title: FAQ
 ---
 
@@ -28,16 +28,16 @@ Go to `localhost:4321/faq` in your browser, and you will now see your newly crea
 ```ts
 // non-set properties default to the properties set in the theme config
 type PageFrontmatter = {
-  title?: string // tab title
-  author?: string // meta
-  description?: string // meta
-  canonicalURL?: string // meta
-  openGraphImage?: string | ImageMetadata // relative URL to image in public folder or local asset
-  publishedDate?: Date // meta
-  scrollProgress?: boolean // bar indicating scroll location on top of page
-  activeHeaderLink?: string // title or href of the active header link
-  scrollToTop?: boolean // "Back to top" button when having scrolled far down
-}
+  title?: string; // tab title
+  author?: string; // meta
+  description?: string; // meta
+  canonicalURL?: string; // meta
+  openGraphImage?: string | ImageMetadata; // relative URL to image in public folder or local asset
+  publishedDate?: Date; // meta
+  scrollProgress?: boolean; // bar indicating scroll location on top of page
+  activeHeaderLink?: string; // title or href of the active header link
+  scrollToTop?: boolean; // "Back to top" button when having scrolled far down
+};
 ```
 
 ## Writing a Blog Post
@@ -61,16 +61,16 @@ Navigate to `localhost:4321/posts`, and your new post will have appear there. Cl
 
 ```ts
 type PostFrontmatter = {
-  title: string
-  author?: string // defaults author set in theme config
-  description: string
-  publishedDate: Date
-  draft?: boolean // defaults to false
-  canonicalURL?: string // meta
-  openGraphImage?: string | ImageMetadata // either URL to image in public folder or local asset
-  tags?: string[] // defaults to []
-  showToC?: boolean // show a Table of Contents, defaults to true
-}
+  title: string;
+  author?: string; // defaults author set in theme config
+  description: string;
+  publishedDate: Date;
+  draft?: boolean; // defaults to false
+  canonicalURL?: string; // meta
+  openGraphImage?: string | ImageMetadata; // either URL to image in public folder or local asset
+  tags?: string[]; // defaults to []
+  showToC?: boolean; // show a Table of Contents, defaults to true
+};
 ```
 
 ## Adding a New Project
@@ -95,13 +95,13 @@ Take a look at `localhost:4321/projects`, and your new project should be listed 
 
 ```ts
 type ProjectFrontmatter = {
-  title: string
-  url?: string // can be relative or absolute
-  startDate?: Date // if omitted, endDate will be ignored, even if set, and project will get sorted to bottom of list
-  endDate?: Date // shows "Now" if not set
-  tags?: string[] // defaults to []
-  previewImage: ImageMetadata // local asset
-}
+  title: string;
+  url?: string; // can be relative or absolute
+  startDate?: Date; // if omitted, endDate will be ignored, even if set, and project will get sorted to bottom of list
+  endDate?: Date; // shows "Now" if not set
+  tags?: string[]; // defaults to []
+  previewImage: ImageMetadata; // local asset
+};
 ```
 
 Note that projects don't generate a dedicated page, but are just listed on the `/projects` page.
